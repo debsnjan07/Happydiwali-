@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali - Jethalal Meme</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #ffdb58;
+            background-image: radial-gradient(circle, #ffe29f, #f6be52, #e7841c);
+            color: #fff;
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff009d;
+            margin-bottom: 1em;
+        }
+
+        .diya-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background-color: #ff4500;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .diya-button:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
+        }
+
+        #message {
+            font-size: 1.5em;
+            color: #da0000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            margin-top: 20px;
+        }
+
+        /* Meme styling */
+        #meme {
+            width: 300px;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Diwali!</h1>
+    <img src="https://i.pinimg.com/originals/4e/7e/aa/4e7eaa484d3c798ebd36f3a2677def9d.gif" alt="Computer man" style="width:100px;height:108px;">
+    <button class="diya-button" onclick="showDiwaliMessage()">Click to Wish</button>
+    <img src="https://i.gifer.com/AkvV.gif" alt="Computer man" style="width:100px;height:108px;">
+    <p id="message">Wishing You a Happy Diwali from Debanjan!</p>
+    <video  id="meme" width="30" height="240" controls>
+    <source  src="meme.mp4"  type="video/mp4">
+    
+    </video>
+    <script>
+        function showDiwaliMessage() {
+            const message = document.getElementById("message");
+            const meme = document.getElementById("meme");
+            message.style.opacity = 1; // Show the message
+            meme.style.opacity = 1;    // Show the meme
+        }
+    </script>
+</body>
+</html>
